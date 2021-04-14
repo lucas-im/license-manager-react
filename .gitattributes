@@ -1,0 +1,4 @@
+mock/ export-ignore
+img/ export-ignore
+README.md export-ignore
+**/Makefile export-ignore
