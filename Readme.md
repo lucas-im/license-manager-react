@@ -1,11 +1,10 @@
 ## Django-React License Management App
 
->A simple ORM webapp that can search and manage the clients and its license status
+### A simple ORM webapp that can search and manage the clients and its license status
 
->Used django for back-end, sqlite3 for database, react.js for front-end,
->redux for react.js status management, react-bootstrap for user-interface, ...ect
+#### Used django for back-end, sqlite3 for database,<br>react.js for front-end, redux for react.js status management,<br>react-bootstrap for user-interface, ...ect
 
-#### ``Work In Progress``
+### ``Work In Progress``
 
 ![](res/img.png)
 
@@ -34,14 +33,14 @@ python3 manage.py runserver
 //On windows, you should type 'py' instead of 'python3'
 ```
 
-And then move to ./web folder and run following commands to run front-end server.
+And then go to ./web folder and run following commands to run front-end server.
 
 ```
 npm i //this may take some time.
 npm run start
 ```
 
-If you've done starting servers without seeing any red messages, then your browser should have created a new tab with the app you just started.<br>
+If you're done starting servers without seeing any red messages, then your browser should have created a new tab with the app you just started.<br>
 otherwise, type following on your browser.
 
 ```
