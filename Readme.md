@@ -41,8 +41,8 @@ npm i //this may take some time.
 npm run start
 ```
 
-If you've done starting servers without seeing any red messages, then your browser should have made a new tab with the app you just started.<br>
-otherwise, type these on your browser.
+If you've done starting servers without seeing any red messages, then your browser should have created a new tab with the app you just started.<br>
+otherwise, type following on your browser.
 
 ```
 localhost:3000
