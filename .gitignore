@@ -208,7 +208,7 @@ pytestdebug.log
 
 # Django stuff:
 local_settings.py
-db.sqlite3
+server/django_project/db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:

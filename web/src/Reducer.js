@@ -1,6 +1,6 @@
-import {combineReducers} from 'redux';
-import {connectRouter} from 'connected-react-router';
-import {mainPageReducer} from './MainPage/MainPageReducer';
+import {combineReducers} from 'redux'
+import {connectRouter} from 'connected-react-router'
+import {mainPageReducer} from './MainPage/MainPageReducer'
 
 const createRootReducer = history =>
     combineReducers({
@@ -8,4 +8,4 @@ const createRootReducer = history =>
         clients: mainPageReducer
     });
 
-export default createRootReducer;
+export default createRootReducer

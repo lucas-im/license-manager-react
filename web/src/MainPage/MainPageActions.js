@@ -1,25 +1,24 @@
-import axios from 'axios';
-import {toast} from 'react-toastify';
+import axios from 'axios'
+import {toast} from 'react-toastify'
 import {
     QUERY_BY_PHONE,
     QUERY_BY_NAME,
     EXTEND_LICENSE_DURATION,
     TERMINATE_LICENSE
-} from "./MainPageTypes";
+} from "./MainPageTypes"
 
 export const checkServerConnection = () => {
-    console.log('serverconnection got throught!');
     axios.get('http://127.0.0.1:8000/api')
+        .then(response => console.log(`backend server connection status: ${response.statusText}`))
         .catch(error => {
-            if (error.message === 'Network Error') toast.error(`Failed to connect database server.${error}`);
+            if (error.message === 'Network Error') toast.error(`Failed to connect database server.${error}`)
         })
 }
 
 export const queryByPhone = phoneNumber => dispatch => {
     console.log(phoneNumber)
-    axios.post(`http://127.0.0.1:8000/api/clients/${phoneNumber}`)
+    axios.get(`http://127.0.0.1:8000/api/phone/${phoneNumber}`)
         .then(response => {
-            console.log('fetch successful.-delete later')
             dispatch({
                 type: QUERY_BY_PHONE,
                 payload: response.data
@@ -32,7 +31,7 @@ export const queryByPhone = phoneNumber => dispatch => {
 
 export const queryByName = name => dispatch => {
     console.log(name);
-    axios.get(`http://127.0.0.1:8000/api/clients/${name}`)
+    axios.get(`http://127.0.0.1:8000/api/name/${name}`)
         .then(response => {
             dispatch({
                 type: QUERY_BY_NAME,
@@ -45,7 +44,8 @@ export const queryByName = name => dispatch => {
 }
 
 export const extendLicenseDuration = id => dispatch => {
-    axios.patch(`http://127.0.0.1:8000/api/licenses/${id}`)
+    console.log(id)
+    axios.patch(`http://127.0.0.1:8000/api/id/${id}`)
         .then(response => {
             dispatch({
                 type: EXTEND_LICENSE_DURATION,
@@ -58,7 +58,8 @@ export const extendLicenseDuration = id => dispatch => {
 }
 
 export const terminateLicense = id => dispatch => {
-    axios.patch(`http://127.0.0.1:8000/api/licenses/${id}`)
+    console.log(id)
+    axios.delete(`http://127.0.0.1:8000/api/id/${id}`)
         .then(response => {
             dispatch({
                 type: TERMINATE_LICENSE,

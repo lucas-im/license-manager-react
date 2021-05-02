@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from server.django_app.models import Clients
+from .models import Clients
 
 
 class ClientsSerializer(serializers.ModelSerializer):

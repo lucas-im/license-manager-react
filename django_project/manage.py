@@ -7,8 +7,8 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    site.addsitedir(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'server.django_project.settings')
+    site.addsitedir(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_project.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

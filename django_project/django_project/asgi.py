@@ -12,7 +12,7 @@ import site
 
 from django.core.asgi import get_asgi_application
 
-site.addsitedir(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+site.addsitedir(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../../../')))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'server.django_project.settings')
 
 application = get_asgi_application()
