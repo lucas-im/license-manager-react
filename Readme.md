@@ -4,7 +4,7 @@
 
 - Used django for back-end, sqlite3 for database,<br>
 - react.js for front-end, redux for react.js status management,<br>
-- react-bootstrap for user-interface, ...ect
+- react-bootstrap for user-interface.
 
 ### ``Work In Progress``
 
