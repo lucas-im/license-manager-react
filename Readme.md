@@ -2,22 +2,24 @@
 
 ### A simple ORM webapp that can search and manage the clients and its license status
 
-#### Used django for back-end, sqlite3 for database,<br>react.js for front-end, redux for react.js status management,<br>react-bootstrap for user-interface, ...ect
+- Used django for back-end, sqlite3 for database,<br>
+- react.js for front-end, redux for react.js status management,<br>
+- react-bootstrap for user-interface, ...ect
 
 ### ``Work In Progress``
 
 ![](res/img.png)
 
-## How do i run this app?
+## How to run it?
 
-First, you need to clone this repository on your computer.
+Clone this repository on your computer.
 
 ```
 git clone https://github.com/Kooni-Boop/Django-React_License_Management_App
 ```
 
 Then, you need to run both back-end(django) and front-end(react.js) servers.
-<br>If you already have Docker installed, you can simply type following command in root folder to do it all at once.
+<br>If you already have Docker installed, you can type following command in root folder to skip further steps.
 
 ```
 docker-compose up
@@ -33,14 +35,15 @@ python3 manage.py runserver
 //On windows, you should type 'py' instead of 'python3'
 ```
 
-And then go to ./web folder and run following commands to run front-end server.
+And then go to ./web folder and run following commands to install dependencies for front-end server and run it.
 
 ```
-npm i //this may take some time.
+npm i 
+//this may take some time.
 npm run start
 ```
 
-If you're done starting servers without seeing any red messages, then your browser should have created a new tab with the app you just started.<br>
+Then your browser should have created a new tab with the app you just started.<br>
 otherwise, type following on your browser.
 
 ```
